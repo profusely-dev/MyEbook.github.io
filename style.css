@@ -1,0 +1,71 @@
+:body 
+{}
+
+:root 
+ {--bg-color: #111B22;
+  --text-color: whitesmoke;
+  --header-bg: #111B22;
+  --btn-bg: dodgerblue;
+  --btn-text: white;
+  font-size: 62.5%;
+}
+
+body.dark-mode {--bg-color: white;
+  --text-color: black;
+  --header-bg: white;
+  --btn-bg: dodgerblue;
+  --btn-text: white;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  font-size: 1.5rem;
+}
+
+header {
+  background-color: var(--header-bg);
+  color: var(--text-color);
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.toggle-btn {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+h2 {
+  margin-top: 3rem;
+  border-bottom: 2px solid var(--text-color);
+  padding-bottom: 0.5rem;
+}
+
+ul {
+  list-style: disc inside;
+}
+
+#contact {
+  margin-top: 30rem;
+}
